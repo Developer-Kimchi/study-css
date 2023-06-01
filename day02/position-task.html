@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position 실습</title>
+    <style>
+        div.img {
+            position: relative;
+            width: 220px;
+            height: 315px;
+            background-image: url("http://koreaitacademy.com/renewal2021/img/tch/teacher007.png");
+            background-size: 100%;
+            background-position: center;
+            margin: 0 auto;
+        }
+
+        div>div.img1>img {
+            position: absolute;
+            display: flex;
+            width: 283px;
+            height: 204px;
+            bottom: -5px;
+        }
+
+        
+        div>div.img2>img {
+            position: absolute;
+            display: flex;
+            width: 115px;
+            height: 82px;
+            bottom: 178px;
+            left: 27px;
+        }
+
+        div>div.img3>img {
+            position: absolute;
+            display: flex;
+            width: 237px;
+            height: 262px;
+            bottom: 0px;
+            left: -113px;
+            z-index: -1;
+        }
+
+        div>div.img4>img {
+            position: absolute;
+            display: flex;
+            width: 299px;
+            height: 245px;
+            bottom: -2px;
+            left: 133px;
+            z-index: -1;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="img">
+       <div class="img1"><img src="thanos.png"></div>
+       <div class="img2"><img src="KakaoTalk_20230315_212857494.png"></div>
+       <div class="img3"><img src="ironman.png"></div>
+       <div class="img4"><img src="captainAmerica.png"></div>
+    </div>
+</body>
+</html>
